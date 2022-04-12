@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+class sgpa{
+     double s1,r;
+public:
+   void getdata(void);
+   void op(void);
+};
+void sgpa::getdata()
+{
+    cout<<"Enter Your SGPA "<<endl;
+cin>>s1;
+}
+void sgpa::op(){
+r=(s1-0.75)*10;
+cout<<"SGPA in Percentage "<<r<<" % "<<endl;
+}
+int main()
+{
+    sgpa t1;
+t1.getdata();
+t1.op();
+return 0;
+}
